@@ -1,6 +1,5 @@
 
 # FOODAPI
-# my_movie_api_project-FLIXCAVE-
 
 ## Table of contents
 * [Introduction](#Introduction)
