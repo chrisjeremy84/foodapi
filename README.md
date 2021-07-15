@@ -4,9 +4,9 @@
 
 ## Table of contents
 * [Introduction](#Introduction)
-* [Objective][Objective]
+* [Objective](Objective)
 * [Technologies](#technologies)
-* [Additonal Info][Additional Info]
+* [Info](Info)
 * [Setup](#setup)
 
 ## Introduction
@@ -21,7 +21,7 @@ Project is created with:
 * Bootstrap version: 4
 
 
-## Additional Info
+## Info
 Included in this project is Bootstrap css, which must be installed through a specific path. Here is a method I use for installing bootstrap in my react projects, the url is below;
 >> https://react-bootstrap.github.io/getting-started/introduction/
 Here is also a view of my "package.json" in my of my project folder, it should be the same for you 
@@ -45,7 +45,7 @@ fork the project ...
 
 ```
 $ cd /flixcave
-$ python manage.py runserver
+$ npm start 
 
 ##ENJOY :-)
 -Chris
