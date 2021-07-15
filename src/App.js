@@ -1,6 +1,8 @@
 import './App.css'
 import Axios from 'axios'
 import { useState } from 'react'
+import RecipeViewer from './components/recipe_viewer'
+import {v4 as uuidv4} from 'uuid'
 
 function App() {
   const [query, setquery] = useState("")
@@ -29,19 +31,21 @@ function App() {
   }
   return (
     <div className="App">
-   <h1 onClick={getData}>Food Searching App</h1>
+   <h1 onClick={getData}>PASTA Searching App</h1>
    <form className="search-form" onSubmit={submitHandler}>
+
     <input type="text" 
-    placeholder="search food" 
-    autoComplete="off" 
-    onChange={onChange}
-    value={query}
+            placeholder="search food" 
+            autoComplete="off" 
+            onChange={onChange}
+            value={query}
     />
+
     <button type="submit">Search</button>
    </form>
 
    <div className="recipes">
-     {recipes !== [] && recipes.map(recipe =><h2>{recipe.recipe.label}</h2>)}
+     {recipes !== [] && recipes.map(recipe =><RecipeViewer key={uuidv4()} recipe={recipe}/>)}
      </div>
     </div>
   );
