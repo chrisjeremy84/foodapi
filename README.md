@@ -42,11 +42,3 @@ Here is all the link to the API/data source used in this project
 ## Setup
 fork the project ...
 
-```
-$ cd /flixcave
-$ npm start 
-
-##ENJOY :-)
--Chris
-
-```
